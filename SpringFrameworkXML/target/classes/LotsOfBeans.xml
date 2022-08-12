@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <bean id="Student" class="org.genspark.Student">
+        <constructor-arg index="0" value="1"/>
+        <constructor-arg index="1" value="David Felix"/>
+        <constructor-arg index="2" ref="Phone" />
+        <constructor-arg index="3" ref="Address"/>
+    </bean>
+    <bean id="Address" class="org.genspark.Address">
+        <constructor-arg index="0" value="New York City"/>
+        <constructor-arg index="1" value="NY"/>
+        <constructor-arg index="2" value="United States"/>
+        <constructor-arg index="3" value="12345"/>
+    </bean>
+    <bean id="Phone" class="org.genspark.Phone">
+        <constructor-arg index="0" value="123456789"/>
+    </bean>
+</beans>
