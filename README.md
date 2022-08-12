@@ -1,4 +1,4 @@
-# -Pyramid-Academy-SpringFramework
+# Pyramid-Academy-SpringFramework
 
 public class student
 {
